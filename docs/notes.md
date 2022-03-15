@@ -1,6 +1,4 @@
-## Welcome to Prisha's Individual Repo!
-
-### Just a practice Jekyll Site so I only have notes for now
+# Notes
 
 ## Week 0
 ### 5.1 Notes -> Beneficial and Harmful Effects of Computing
