@@ -1,5 +1,7 @@
 # Notes
 
+{% include navigation.html %}
+
 ## Week 0
 ### 5.1 Notes -> Beneficial and Harmful Effects of Computing
 * UAVs/Drones are useful for search and rescue, hobbies, and various things but have negative effects 
