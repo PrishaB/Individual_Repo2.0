@@ -1,6 +1,6 @@
 # Notes
 
-<!-- {% include navigation.html %} -->
+
 <table>
      <tr>
          <td><a href="index">Home</a></td>
