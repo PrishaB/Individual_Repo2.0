@@ -1,5 +1,14 @@
 ## Create Task Work
-{% include navigation.html %}
+<!-- {% include navigation.html %} -->
+<table>
+     <tr>
+         <td><a href="index">Home</a></td>
+         <td><a href="code">Replit Code</a></td>
+         <td><a href="create_task">Create Task Work</a></td>
+         <td><a href="notes">CB Notes</a></td>
+         <td><a href="https://github.com/PrishaB/Individual_Repo2.0/projects/1#card-79113428">Review Ticket</a></td>
+     </tr>
+ </table>
 
 Create Task One-Minute Video Link: https://drive.google.com/file/d/1MC9QIr6Zt-_QvZVwjWtfa4SvADldXGZz/view?usp=sharing
 
