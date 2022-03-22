@@ -1,6 +1,5 @@
 ## Code
 
-{% include navigation.html %}
 
 ### Week 1
 #### For some reason, my loops only work in an individual replit and I still have a few issues which I'll fix later, so I'll put the individual repo here:
