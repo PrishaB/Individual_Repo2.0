@@ -22,7 +22,17 @@
 * Open Source MIT License --> friendly to people like Qualcomm --> allows code to be used freely in making and distributed closed source versions
 * Open Source GPL license --> can do anything except distribute
 * Make sure you comply with terms of licenses --> cite sources
-* 
+* Can be complicated to understand all Creative Commons Licenses:
+  * Music companies build DRM (Ditgital Rights Management) software to protect, play and/or distribute content
+  * Open Source usually used for educational purposes so it is good for class
+  * When using Open Source companies need to find techniques and business models for Open Source software to work as per the license 
+  * Many people use Red Hat business model because of it's amazing Initial Public Offering (IPO)
+Questions:
+1. When you create a GitHub repository it requests a license type. Review the license types in relationship to this Tech Talk and make some notes in GitHub pages.
+  * Github has a site which allows you to chose from three diffent overarching groups --> work in community, simple, and sharing improvements
+  * Based on that you can decide which main branch you want to go down and then finalize
+2. Make a license for your personal and Team project. Document license you picked and why.
+  * Maybe thinking of using something that works for a community since it's a page in which other people need to access in order to buy the masks.
 
 ## Week 1
 ### 5.3 Notes -> Computer Bias
