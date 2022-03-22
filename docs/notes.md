@@ -3,6 +3,27 @@
 
 {% include navigation.html %}
 
+## Week 2
+### 5.5 Notes -> Legal and Ethical Concerns
+* Section is about Free Software Licensing
+* Lawyers make profession on Patents --> can be impacted by General Public Licensing (GPL)
+* Qualcomm makes money on patents
+* Using GPL makes it so you can't charge for others using your software and patents
+* Open Source --> derivative work free and code shared
+* Royalty Payment --> anyone who uses idea/patent needs to pay
+* Black Duck software composition analysis (SCA) -> manage security, quality, and licence compliance risks from using open source and third-party code
+* Qualcomm has a huge team to run security risks and such so they can make money off patents
+* Basically, make sure you are careful about the code you copy and ensure you know the restrictions based on the software license you are copying off
+* When selecting a license, need to ask:
+  *  Do I want to waive default copyright in reuse?
+  *  Do I want to allow derivative works or not?
+  *  Do I want to require all deivative code to be shared?
+* Creative Commons CCO Public Domain Dedication waives copyright interest in a work you've created and dedicates it to a www public domain
+* Open Source MIT License --> friendly to people like Qualcomm --> allows code to be used freely in making and distributed closed source versions
+* Open Source GPL license --> can do anything except distribute
+* Make sure you comply with terms of licenses --> cite sources
+* 
+
 ## Week 1
 ### 5.3 Notes -> Computer Bias
 * Computer bias: result of human error and bias -> human bias inadvertantly seeps into computing
