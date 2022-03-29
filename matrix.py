@@ -13,5 +13,7 @@ print(*a, sep=" ")
 print(*b, sep=" ")
 print(*c, sep=" ")
 
-for i in matrix:
-    print(str(i).replace('[', '').replace('[', '').replace(']', ''))
+
+def print_matrix():
+    for i in matrix:
+        print(str(i).replace('[', '').replace('[', '').replace(']', ''))

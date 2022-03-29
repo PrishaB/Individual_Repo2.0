@@ -2,8 +2,17 @@
 # Imports typically listed at top
 # each import enables us to use logic that has been abstracted to other files and folders
 # import funcy
+from week_0.boatanim import ship
+from week_0.tree import holidaybush
+from week_0.square import square
 
+from week_1.fibonacci import fibonacci
+from matrix import print_matrix
+from week_2.imperative_evens import findevens
+from week_2.class_evens import evens
 
+from week_1.list import lists
+from week_2.palindrome import driver
 # Main list of [Prompts, Actions]
 # Two styles are supported to execute abstracted logic
 # 1. file names will be run by exec(open("filename.py").read())
@@ -15,22 +24,22 @@ main_menu = [
 # Submenu list of [Prompt, Action]
 # Works similarly to main_menu
 printing_practice = [
-    ["Funcy (not fixed yet)", "Week 0/boatanim.py"],
-    ["Tree", "Week 0/tree.py"],
-    ["Square", "Week 0/square.py"],
+    ["Funcy (not fixed yet)", ship()],
+    ["Tree", holidaybush()],
+    ["Square", square()],
 ]
 
 math_practice = [
     ["Matrix Practice", "matrix.py"],
-    ["Fibonacci", "Week 1/fibonacci.py"],
-    ["Factorial", "Week 2/factorial.py"],
-    ["Imperative Evens", "Week 2/imperative_evens.py"],
-    ["Class Evens (doesn't work on this replit)", "Week 2/class_evens.py"],
+    ["Fibonacci", fibonacci()],
+    ["Factorial", print_matrix()],
+    ["Imperative Evens", findevens()],
+    ["Class Evens (doesn't work on this replit)", evens()],
 
 ]
 other_practice = [
-    ["List", "Week 1/list.py"],
-    ["Palindrome", "Week 2/palindrome.py"],
+    ["List", lists()],
+    ["Palindrome", driver()],
 ]
 
 # Menu banner is typically defined by menu owner
