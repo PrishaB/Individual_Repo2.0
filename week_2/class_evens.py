@@ -1,7 +1,7 @@
 # Same logic as imperative but using classes instead of imperative form
 
-min = 1
-max = 10
+min = int(input("Lower bound: "))
+max = int(input("Upper bound: "))
 
 
 class Evens:
@@ -18,3 +18,4 @@ def evens():
     obj = Evens()
     f = obj.__call__()
     print("Evens are:", f)
+
