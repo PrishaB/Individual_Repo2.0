@@ -27,6 +27,7 @@ class Factorial:
 # So far, code only works for 0, 1, 2, and 3. Need to figure out how to get while loop to repeat.
 
 #Calling the class, taking out an object and printing it.
-obj = Factorial()
-f = obj.__call__()
-print("Factorial is:", f)
+def print_factorial():
+    obj = Factorial()
+    f = obj.__call__()
+    print("Factorial is:", f)

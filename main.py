@@ -10,6 +10,7 @@ from week_1.fibonacci import fibonacci
 from matrix import print_matrix
 from week_2.imperative_evens import findevens
 from week_2.class_evens import evens
+from week_2.factorial import print_factorial
 
 from week_1.list import lists
 from week_2.palindrome import driver
@@ -17,107 +18,84 @@ from week_2.palindrome import driver
 # Two styles are supported to execute abstracted logic
 # 1. file names will be run by exec(open("filename.py").read())
 # 2. function references will be executed directly file.function()
-main_menu = [
 
-]
 
 # Submenu list of [Prompt, Action]
 # Works similarly to main_menu
-printing_practice = [
-    ["Funcy (not fixed yet)", ship()],
-    ["Tree", holidaybush()],
-    ["Square", square()],
-]
+def buildMenu(menu):
+    for key,value in menu.items():
+        display = value["display"]
+        print(f"{key} ------ {display}") # each menu item is printed
 
-math_practice = [
-    ["Matrix Practice", "matrix.py"],
-    ["Fibonacci", fibonacci()],
-    ["Factorial", print_matrix()],
-    ["Imperative Evens", findevens()],
-    ["Class Evens (doesn't work on this replit)", evens()],
+def presentMenu(menu):
+    buildMenu(menu) #print out menu and take input
+    choice = int(input())
+    while choice not in menu: # ensure that choice is valid
+        choice = int(input("Please elect a valid item. "))
+    if (choice) in menu:
+        if menu[choice]["type"] == "func": #determine whether recursion is needed
+            menu[choice]["exec"]() #run function
 
-]
-other_practice = [
-    ["List", lists()],
-    ["Palindrome", driver()],
-]
+        else:
+            presentMenu(menu[choice]["exec"]) #display submenu
 
-# Menu banner is typically defined by menu owner
-border = "=" * 25
-banner = f"\n{border}\nPlease Select An Option\n{border}"
 
-# def menu
-# using main_menu list:
-# 1. main menu and submenu reference are created [Prompts, Actions]
-# 2. menu_list is sent as parameter to menuy.menu function that has logic for menu control
-def menu():
-    title = "Prisha's Practice Code Menu" + banner
-    menu_list = main_menu.copy()
-    menu_list.append(["Printing Practice", printing])
-    menu_list.append(["Math", math])
-    menu_list.append(["Other", other])
-    buildMenu(title, menu_list)
+printing_practice = {
+    1: {"display":"Funcy",
+        "exec":ship,
+        "type":"func"},
+    2: {"display":"Tree",
+        "exec":holidaybush,
+        "type":"func"},
+    3: {"display":"Square",
+        "exec":square,
+        "type":"func"}
+}
 
-# def submenu
-# using sub menu list above:
-# sub_menu works similarly to menu()
-def printing():
-    title = "Printing Practice Menu" + banner
-    buildMenu(title, printing_practice)
 
-def math():
-    title = "Math Menu" + banner
-    buildMenu(title, math_practice)
+math_practice = {
+    1: {"display":"Matrix Practice",
+        "exec":print_matrix,
+        "type":"func"},
+    2: {"display":"Fibonacci",
+        "exec":fibonacci,
+        "type":"func"},
+    3: {"display":"Factorial",
+        "exec":print_factorial,
+        "type":"func"},
+    4: {"display":"Imperative Evens",
+        "exec":findevens,
+        "type":"func"},
+    5: {"display":"Class Evens",
+        "exec":evens,
+        "type":"func"}
+}
 
-def other():
-    title = "Search Menu" + banner
-    buildMenu(title, other_practice)
+other_practice = {
+    1: {"display":"List",
+        "exec":lists,
+        "type":"func"},
+    2: {"display":"Palindrome",
+        "exec":driver,
+        "type":"func"}
+}
 
-def buildMenu(banner, options):
-    # header for menu
-    print(banner)
-    # build a dictionary from options
-    prompts = {0: ["Exit", None]}
-    for op in options:
-        index = len(prompts)
-        prompts[index] = op
-
-    # print menu or dictionary
-    for key, value in prompts.items():
-        print(key, '->', value[0])
-
-    # get user choice
-    choice = input("Type your choice> ")
-
-    # validate choice and run
-    # execute selection
-    # convert to number
-    try:
-        choice = int(choice)
-        if choice == 0:
-            # stop
-            return
-        try:
-            # try as function
-            action = prompts.get(choice)[1]
-            action()
-        except TypeError:
-            try:  # try as playground style
-                exec(open(action).read())
-            except FileNotFoundError:
-                print(f"File not found!: {action}")
-            # end function try
-        # end prompts try
-    except ValueError:
-        # not a number error
-        print(f"Not a number: {choice}")
-    except UnboundLocalError:
-        # traps all other errors
-        print(f"Invalid choice: {choice}")
-    # end validation try
-
-    buildMenu(banner, options)  # recursion, start menu over again
+main_menu = {
+    1: {"display":"Printing Practice",
+        "exec":printing_practice,
+        "type":"dict"},
+    2: {"display":"Math",
+        "exec":math_practice,
+        "type":"dict"},
+    3: {"display":"Other",
+        "exec":other_practice,
+        "type":"dict"},
+    4: {"display":"Quit Program",
+        "exec":quit,
+        "type":"func"}
+}
 
 
 if __name__ == "__main__":
-    menu()
+    while True: #forever loop
+        presentMenu(main_menu)

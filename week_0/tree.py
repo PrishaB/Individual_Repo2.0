@@ -1,4 +1,5 @@
 def holidaybush(n):
+    int(input("How tall do you want your tree to be?"))
     z = n - 1
     x = 1
     for i in range(n):
@@ -7,6 +8,3 @@ def holidaybush(n):
         z-=1
     print('    ***    ')
     print('    ***    ')
-
-
-holidaybush(6)
