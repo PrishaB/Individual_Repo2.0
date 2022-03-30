@@ -1,4 +1,4 @@
-## Code
+## Key Learnings
 
 ### Tech Talk 0:
 ```python
