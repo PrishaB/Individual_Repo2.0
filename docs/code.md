@@ -10,9 +10,7 @@ def menu():
     menu_list.append(["Other", other])
     buildMenu(title, menu_list)
 ```
-Prisha learned things
-
-add more code blocks here later
+This week we started learning how to build menues and how to add to them. That's the main thing I learned in this Tech Talk along with some animating stuff.
 
 ### Tech Talk 1:
 ```python
@@ -38,7 +36,7 @@ def fibonacci():
             n2 = nth
             count += 1
 ```
-Prisha learned mroe things
+Learned how to use different loops to build repetitive functions.
 
 ### Tech Talk 2:
 ```python
@@ -53,4 +51,4 @@ class Evens:
                 return print(number)
 
 ```
-Prisha learned even more things!!!
+Learned how to utilize classes ✨
