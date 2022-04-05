@@ -9,10 +9,12 @@ from week_0.square import square
 from week_1.fibonacci import fibonacci
 from matrix import print_matrix
 from week_2.imperative_evens import findevens
-from week_2.class_evens import evens
+from week_2.class_evens import Evens
 from week_2.factorial import print_factorial
 
-from week_1.list import lists
+from week_1.list import for_loop
+from week_1.list import while_loop
+from week_1.list import recursive_loop
 from week_2.palindrome import driver
 # Main list of [Prompts, Actions]
 # Two styles are supported to execute abstracted logic
@@ -67,14 +69,28 @@ math_practice = {
         "exec":findevens,
         "type":"func"},
     5: {"display":"Class Evens",
-        "exec":evens,
+        "exec":Evens,
         "type":"func"}
 }
+
+
+lists = {
+    1: {"display":"For",
+        "exec":for_loop,
+        "type":"func"},
+    2: {"display":"While",
+        "exec":while_loop,
+        "type":"func"},
+    3: {"display":"Recursive",
+        "exec":recursive_loop(),
+        "type":"func"}
+}
+
 
 other_practice = {
     1: {"display":"List",
         "exec":lists,
-        "type":"func"},
+        "type":"dict"},
     2: {"display":"Palindrome",
         "exec":driver,
         "type":"func"}
