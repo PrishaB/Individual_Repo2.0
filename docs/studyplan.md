@@ -1,4 +1,4 @@
-# Review Page, (still in progress, may update as going forward)
+# Review Page, (still in progress)
 
 ## Week 0 (this week)
 ### Monday (4/18)
