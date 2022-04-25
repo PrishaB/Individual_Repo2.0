@@ -6,16 +6,16 @@
 Second 1/2 of Big Idea 3 CB topics, watch the videos and look over the assigned practice tests from this section
 
 ### Tuesday (4/26)
-First 1/2 of Big Idea 4 CB topics, watch the videos and look over the assigned practice tests from this section
+Test day :)
 
 ### Wednesday (4/27)
-Second 1/2 of Big Idea 4 CB topics, again, watch the videos and look over assigned practice tests from this section
+First 1/2 of Big Idea 4 CB topics, watch the videos and look over the assigned practice tests from this section
 
 ### Thursday (4/28)
-First 1/2 of Big Idea 5 CB topics, watch the videos and look over the assigned practice tests from this section
+Attempt to look over second 1/2 of Big Idea 4 CB topics but mainly focus on improv skit prep
 
 ### Friday (4/29)
-Second 1/2 of Big Idea 5 CB topics, watch the videos and look over the assigned practice tests from this sectio
+Improv Skit :)
 
 ## Week 0
 ### Monday (4/18)
