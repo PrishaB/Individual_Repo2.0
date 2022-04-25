@@ -4,7 +4,7 @@
 
 <table>
      <tr>
-         <td><a href="Test Corrections">Home</a></td>
+         <td><a href="corrections">Test Corrections</a></td>
          <td><a href="studyplan">Study Plan</a></td>
      </tr>
  </table>
