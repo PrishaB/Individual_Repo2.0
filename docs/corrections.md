@@ -32,6 +32,41 @@ The preserve has two databases of information available to use for the exhibit. 
 #### Right Answer: ((end - start)/5)+1
 #### Corrections: The loop should iterate once for each multiple of 5 from start to end. The number of multiples of 5 from start to end is given by ((end - start)/5)+1. For the example given, ((end - start)/5)+1 evaluates to 4.
 
+#### Question 16: Consider the two programs below. Which of the following best compares the values displayed by programs A and B?
+#### Right Answer: Program A initializes i to 1. Inside the loop, it prints i and then increments i. 
+#### The loop terminates when i is greater than 10, which occurs after 10 is printed. Program A prints 1 2 3 4 5 6 7 8 9 10. Program B initializes i to 0. Inside the loop, it increments i and then prints i. The loop terminates when i equals 10, which occurs after 10 is printed. Program B prints 1 2 3 4 5 6 7 8 9 10.
+
+#### Question 17: An online game collects data about each player’s performance in the game. A program is used to analyze the data to make predictions about how players will perform in a new version of the game. The procedure GetPrediction (idNum) returns a predicted score for the player with ID number idNum. Assume that all predicted scores are positive. The GetPrediction procedure takes approximately 1 minute to return a result. All other operations happen nearly instantaneously. Two versions of the program are shown below.
+#### Right Answer: Version II requires approximately 5 more minutes to execute than version I.
+#### Corrections: Version I calls the GetPrediction procedure once for each element of idList, or four times total. Since each call requires 1 minute of execution time, version I requires approximately 4 minutes to execute. Version II calls the GetPrediction procedure twice for each element of idList, and then again in the final display statement. This results in the procedure being called nine times, requiring approximately 9 minutes of execution time.
+
+#### Question 22: A certain computer game is played between a human player and a computer-controlled player. Every time the computer-controlled player has a turn, the game runs slowly because the computer evaluates all potential moves and selects the best one. Which of the following best describes the possibility of improving the running speed of the game?
+#### Right Answer: The game’s running speed might be improved by using a process that finds approximate solutions every time the computer-controlled player has a turn.
+#### Corrections: Selecting the best move is an optimization problem that cannot be solved in a reasonable time based on the information that the game runs slowly. If the algorithm for selecting the best move is running too slowly, the game may run more quickly if a heuristic is used to find approximate solutions.
+
+#### Question 30: A student wrote the following program to remove all occurrences of the strings "the" and "a" from the list wordList. While debugging the program, the student realizes that the loop never terminates. Which of the following changes can be made so that the program works as intended?
+#### Right Answer: Inserting index  ←  index - 1 between lines 7 and 8
+#### Corrections: The program traverses wordList starting at the end of the list and moving to the start of the list, removing any elements that are equal to "the" or "a" along the way. Inserting this statement between lines 7 and 8 decrements index after checking each list element, ensuring that all elements are checked.
+
+#### Question 40: Some programming languages use constants, which are variables that are initialized at the beginning of a program and never changed. Which of the following are good uses for a constant?
+``I. To represent the mathematical value π (pi) as 3.14
+II. To represent the current score in a game
+III. To represent a known value such as the number of days in a week``
+#### Right Answer: I and III only
+#### Corrections: A constant is a good choice for statement I and statement III because the value of pi and the number of days in a standard calendar week never change.
+
+#### Question 43: Which of the following statements about the Internet is true?
+#### Right Answer: The Internet is designed to scale to support an increasing number of users.
+#### Corrections: The Internet was designed to be scalable, using open protocols to easily connect additional computing devices to the network.
+
+#### Question 45: The two code segments below are each intended to display the average of the numbers in the list One word, num List. Assume that One word, num List contains more than one value. Which of the following best describes the two code segments?
+#### Right Answer: Both code segments display the correct average, but code segment I requires more arithmetic operations than code segment II.
+#### Corrections: Both code segments display the correct average. Code segment I requires more arithmetic operations because it performs the operation sum divided by LENGTH, open parenthesis, num List, close parenthesis within the loop, while code segment II performs the same operation only once.
+
+#### Question 48: Which of the following best explains how a certificate authority is used in protecting data?
+#### Right Answer: A certificate authority verifies the authenticity of encryption keys used in secured communications.
+#### Corrections: Certificate authorities are entities that issue digital certificates, which are used to certify the ownership of public keys.
+
 ## Final Test 3
 ### Score: 41/50
 #### Question 2: Which of the following best explains the ability to solve problems algorithmically?
